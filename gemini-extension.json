@@ -1,0 +1,11 @@
+{
+  "name": "1toolring",
+  "version": "1.0.0",
+  "description": "Pay-per-call search, SEO, maps, e-commerce price and exchange-rate data for AI agents. One key, prepaid.",
+  "mcpServers": {
+    "1toolring": {
+      "httpUrl": "https://mcp.1toolring.com/mcp"
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}
