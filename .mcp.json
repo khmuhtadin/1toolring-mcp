@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "1toolring": {
+      "type": "http",
+      "url": "https://mcp.1toolring.com/mcp"
+    }
+  }
+}
