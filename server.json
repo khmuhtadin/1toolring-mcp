@@ -3,8 +3,12 @@
   "name": "com.1toolring/mcp",
   "title": "1ToolRing",
   "description": "Pay-per-call search, SEO, maps, e-commerce price and FX data for AI agents. One key, prepaid.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://1toolring.com",
+  "repository": {
+    "url": "https://github.com/khmuhtadin/1toolring-mcp",
+    "source": "github"
+  },
   "remotes": [
     {
       "type": "streamable-http",
