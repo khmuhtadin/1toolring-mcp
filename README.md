@@ -7,7 +7,7 @@ Your agent finds a tool by describing the job, sees the price before it runs any
 - Website: https://1toolring.com
 - Docs: https://docs.1toolring.com/overview/
 - Setup guide for agents: https://1toolring.com/llms.txt
-- Status: early access. New accounts are approved in batches.
+- Status: open. Anyone can sign up, and a new account gets a Rp10.000 starter balance once its email is verified.
 
 This repository holds the public connection details and client configs. The server itself is hosted; there is nothing to run locally.
 
@@ -29,7 +29,7 @@ This repository holds the public connection details and client configs. The serv
 | `run_tool` | Run a tool, paid from your prepaid balance. The price is held up front and settled to the real cost; failed runs are not charged. | Per call |
 | `get_tool_run` | Fetch the status and output of a slow run started by `run_tool`. | Free |
 
-What the catalog covers today: search and SEO, maps and places, e-commerce product and price data, and exchange rates. People or contact data, email finding, social media data and web scraping are not offered.
+What the catalog covers today: thousands of tools from third-party providers, across search and SEO, maps and places, e-commerce, market data, web pages, images, video and voice, and more. The full list with prices is at https://1toolring.com/tools/
 
 ## Set up
 
