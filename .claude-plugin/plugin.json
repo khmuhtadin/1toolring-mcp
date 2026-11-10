@@ -1,0 +1,11 @@
+{
+  "name": "1toolring",
+  "description": "One key and one prepaid balance for thousands of pay-per-call tools: search, SEO, maps, e-commerce prices, market data, enrichment, scraping and AI media tools.",
+  "version": "1.0.0",
+  "author": {"name": "Khaisa Studio", "url": "https://1toolring.com"},
+  "homepage": "https://1toolring.com",
+  "repository": "https://github.com/khmuhtadin/1toolring-mcp",
+  "license": "MIT",
+  "keywords": ["mcp", "search", "seo", "scraping", "pay-per-call"],
+  "icon": "assets/logo.svg"
+}
