@@ -76,6 +76,24 @@ codex mcp login 1toolring
 code --add-mcp '{"name":"1toolring","type":"http","url":"https://mcp.1toolring.com/mcp"}'
 ```
 
+**Kiro**
+
+[![Add to Kiro](https://kiro.dev/images/add-to-kiro.svg)](https://kiro.dev/launch/mcp/add?name=1toolring&config=%7B%22url%22%3A%22https%3A%2F%2Fmcp.1toolring.com%2Fmcp%22%7D)
+
+Or add it to `.kiro/settings/mcp.json` and sign in when Kiro asks:
+
+```json
+{ "mcpServers": { "1toolring": { "url": "https://mcp.1toolring.com/mcp" } } }
+```
+
+**Cline**
+
+```bash
+cline mcp install 1toolring --transport http https://mcp.1toolring.com/mcp
+```
+
+Cline opens a 1ToolRing sign-in page to approve access. The entry is also in the Cline marketplace (cline/marketplace#433).
+
 **Gemini CLI**
 
 ```bash
