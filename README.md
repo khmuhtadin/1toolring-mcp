@@ -88,6 +88,24 @@ Add a custom connector with the URL `https://mcp.1toolring.com/mcp` (no client I
 npx add-mcp https://mcp.1toolring.com/mcp -g
 ```
 
+## Agent on a server or VPS
+
+Sign-in opens in a browser on your own computer. When your agent runs on another machine, that browser cannot reach the agent, so the Allow click leaves it waiting for a callback it will never get. After you choose Allow, the 1ToolRing page shows a link and a ready curl command. Paste the link to your agent, or run the command on the server. The link works once and expires soon.
+
+You can also skip the sign-in flow and use an API key:
+
+```bash
+curl -fsSL https://1toolring.com/install.sh | sh -s -- --key <key>
+```
+
+Keys are at https://app.1toolring.com/keys.
+
+## How your agent handles cost and questions
+
+- It runs small jobs without asking (a run of Rp1.000 or less, about $0.05, while the whole request stays under Rp5.000) and tells you the cost once at the end.
+- It asks first for anything above that, or above half your balance.
+- When a request could mean different things it asks one short question with a few options, its recommendation first.
+
 ## Pricing and payment
 
 Pay per call, no plan. A Google search costs about Rp48 (roughly $0.003). Top up any amount from Rp10.000 by Indonesian bank virtual account or minimarket, or from $1 by card. Prices are always shown before a run. See https://1toolring.com/pricing/.
