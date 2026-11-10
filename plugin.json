@@ -10,7 +10,16 @@
   "homepage": "https://1toolring.com",
   "repository": "https://github.com/khmuhtadin/1toolring-mcp",
   "license": "MIT",
-  "keywords": ["mcp", "search", "seo", "google-maps", "scraping", "enrichment", "pay-per-call", "agent-tools"],
+  "keywords": [
+    "mcp",
+    "search",
+    "seo",
+    "google-maps",
+    "scraping",
+    "enrichment",
+    "pay-per-call",
+    "agent-tools"
+  ],
   "extensions": {
     "com.nousresearch.hermes": {
       "config_schema": {
@@ -18,7 +27,12 @@
           "type": "secret",
           "env": "ONETOOLRING_API_KEY",
           "label": "1ToolRing API key",
-          "description": "Optional. A key from https://app.1toolring.com/keys, sent to mcp.1toolring.com as a bearer token. Clients that support MCP OAuth can sign in in the browser instead."
+          "description": "A key from https://app.1toolring.com/keys, sent to mcp.1toolring.com as an Authorization: Bearer header."
+        }
+      },
+      "servers": {
+        "1toolring": {
+          "trust": "untrusted"
         }
       }
     }

@@ -82,6 +82,22 @@ Or `gemini mcp add --transport http 1toolring https://mcp.1toolring.com/mcp`, th
 
 Add a custom connector with the URL `https://mcp.1toolring.com/mcp` (no client ID needed), then choose Allow.
 
+**Hermes Agent**
+
+```sh
+hermes plugins install https://github.com/khmuhtadin/1toolring-mcp
+hermes plugins enable 1toolring
+```
+
+Then add your key (from https://app.1toolring.com/keys) as `ONETOOLRING_API_KEY` in your Hermes profile `.env`, or paste it in the plugin's settings form in Hermes Desktop. Portable packages stay disabled until you enable them. Start a new session (or run `/reload-mcp`) and the `1toolring` MCP tools are available, along with the `1toolring:1toolring` skill.
+
+Disclosure for the Hermes package:
+
+- Every tool call, with its arguments, goes to 1ToolRing's hosted server (`mcp.1toolring.com`). The tool list is served by that server at runtime.
+- `run_tool` spends money from the prepaid balance of the account that owns the key, at the price shown by `inspect_tool`. Failed runs are not charged. The other three tools are free and read-only.
+- The server is marked `untrusted` in the package, so Hermes asks before every `run_tool` call; the free read-only tools run without a prompt.
+- The key is read from `ONETOOLRING_API_KEY` and sent as an `Authorization: Bearer` header. The package has no local code, runs no shell commands and stores nothing.
+
 **Every agent on this machine at once**
 
 ```bash
@@ -92,13 +108,7 @@ npx add-mcp https://mcp.1toolring.com/mcp -g
 
 Sign-in opens in a browser on your own computer. When your agent runs on another machine, that browser cannot reach the agent, so the Allow click leaves it waiting for a callback it will never get. After you choose Allow, the 1ToolRing page shows a link and a ready curl command. Paste the link to your agent, or run the command on the server. The link works once and expires soon.
 
-You can also skip the sign-in flow and use an API key:
-
-```bash
-curl -fsSL https://1toolring.com/install.sh | sh -s -- --key <key>
-```
-
-Keys are at https://app.1toolring.com/keys.
+You can also skip the sign-in flow and use an API key: create one at https://app.1toolring.com/keys, then follow the API key steps at https://1toolring.com/install/ (they include a one-line installer for servers).
 
 ## How your agent handles cost and questions
 

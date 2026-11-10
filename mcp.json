@@ -3,7 +3,10 @@
   "mcpServers": {
     "1toolring": {
       "type": "streamable-http",
-      "url": "https://mcp.1toolring.com/mcp"
+      "url": "https://mcp.1toolring.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${ONETOOLRING_API_KEY}"
+      }
     }
   }
 }
