@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "1toolring",
   "version": "1.0.0",
-  "description": "One key and one prepaid balance for thousands of pay-per-call tools: live Google search, SEO and keyword data, Google Maps places, e-commerce prices, market and FX data, people and company enrichment, social media, web scraping and AI media tools, through 1ToolRing's remote MCP server.",
+  "description": "One key and one prepaid balance for thousands of pay-per-call tools: live Google search, SEO and keyword data, Google Maps places, shopping prices, market and FX data, web pages, images and more, through 1ToolRing's remote MCP server.",
   "author": {
     "name": "Khaisa Studio",
     "url": "https://1toolring.com"

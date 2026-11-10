@@ -1,6 +1,6 @@
 ---
 name: 1toolring
-description: Call live data tools through 1ToolRing (1toolring.com), one key and one prepaid balance for thousands of pay-per-call tools. Use when a task needs live Google search results, keyword search volume and SEO data, Google Maps places, Amazon or other e-commerce product prices, stock, crypto or exchange-rate data, people and company enrichment, email or contact finding, social media data, web scraping, jobs or weather data, or AI image, video and voice tools, and the agent has no direct vendor account for them.
+description: Call live data tools through 1ToolRing (1toolring.com), one key and one prepaid balance for thousands of pay-per-call tools. Use when a task needs live Google search results, keyword search volume and SEO data, Google Maps places, Amazon or other e-commerce product prices, stock, crypto or exchange-rate data, social media data, web page scraping, jobs or weather data, or AI image, video and voice tools, and the agent has no direct vendor account for them.
 license: MIT
 homepage: https://1toolring.com
 metadata:
@@ -10,7 +10,7 @@ metadata:
 
 # 1ToolRing
 
-1ToolRing puts one API key and one prepaid balance in front of a catalog of callable tools from third-party providers. Every tool shows its price before it runs, and a failed call is never charged. The flow is always the same: discover a tool by describing the job, inspect it for the input schema and price, then run it.
+1ToolRing puts one API key and one prepaid balance in front of a catalog of thousands of callable tools from third-party providers. Every tool shows its price before it runs, and a failed call is never charged. The flow is always the same: discover a tool by describing the job, inspect it for the input schema and price, then run it.
 
 ## 1. Connect
 
