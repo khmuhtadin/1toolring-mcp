@@ -1,0 +1,20 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "1toolring-mcp",
+  "description": "1ToolRing: one API key and one prepaid balance for thousands of pay-per-call tools, as a Claude Code plugin that connects to the remote 1ToolRing MCP server.",
+  "owner": {
+    "name": "Khaisa Studio",
+    "url": "https://1toolring.com",
+    "email": "hello@1toolring.com"
+  },
+  "plugins": [
+    {
+      "name": "1toolring",
+      "source": "./",
+      "description": "One key and one prepaid balance for thousands of pay-per-call tools: search, SEO, maps, shopping prices, market data, web pages, images and more.",
+      "category": "data",
+      "tags": ["mcp", "search", "seo", "maps", "market-data", "pay-per-call"],
+      "homepage": "https://1toolring.com"
+    }
+  ]
+}

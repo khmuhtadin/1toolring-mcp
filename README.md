@@ -41,7 +41,13 @@ set up 1ToolRing - https://1toolring.com/llms.txt
 
 Or add it by hand:
 
-**Claude Code**
+**Claude Code (plugin, includes the skill)**
+
+```bash
+/plugin install 1toolring --marketplace khmuhtadin/1toolring-mcp
+```
+
+**Claude Code (MCP server only)**
 
 ```bash
 claude mcp add --transport http 1toolring https://mcp.1toolring.com/mcp
