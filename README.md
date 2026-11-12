@@ -1,13 +1,13 @@
 # 1ToolRing MCP server
 
-One key and one prepaid balance for the live data AI agents need: Google search results, keyword and SEO data, Google Maps places, e-commerce product prices and exchange rates.
+One key and one prepaid balance for 3,051 pay-per-call tools from 99 providers: Google search results and keyword data, Google Maps places, Amazon and Google Shopping prices, market data, exchange rates, web pages and more.
 
 Your agent finds a tool by describing the job, sees the price before it runs anything, and pays per call from your 1ToolRing balance. Failed calls are not charged. There is no subscription.
 
 - Website: https://1toolring.com
 - Docs: https://docs.1toolring.com/overview/
 - Setup guide for agents: https://1toolring.com/llms.txt
-- Status: open. Anyone can sign up, and a new account gets a Rp10.000 starter balance once its email is verified.
+- Status: open. Sign-up is open to everyone, and a new account gets a small starter balance once its email is verified.
 
 This repository holds the public connection details and client configs. The server itself is hosted; there is nothing to run locally.
 
@@ -24,12 +24,12 @@ This repository holds the public connection details and client configs. The serv
 
 | Tool | What it does | Cost |
 |---|---|---|
-| `discover_tools` | Search the catalog by describing the job in plain words. Returns tool ids, a short description and the price as {usd, idr}. | Free |
+| `discover_tools` | Search the catalog by describing the job in plain words. Returns tool ids, a short description and the price. | Free |
 | `inspect_tool` | Read one tool's input schema, price model and health before running it. | Free |
 | `run_tool` | Run a tool, paid from your prepaid balance. The price is held up front and settled to the real cost; failed runs are not charged. | Per call |
 | `get_tool_run` | Fetch the status and output of a slow run started by `run_tool`. | Free |
 
-What the catalog covers today: thousands of tools from third-party providers, across search and SEO, maps and places, e-commerce, market data, web pages, images, video and voice, and more. The full list with prices is at https://1toolring.com/tools/
+What the catalog covers today: 3,051 tools from 99 providers, across Google search and SEO data, maps and places, shopping prices, market data, exchange rates, web pages, and more. The full list with prices is at https://1toolring.com/tools/
 
 ## Set up
 
@@ -136,13 +136,13 @@ You can also skip the sign-in flow and use an API key: create one at https://app
 
 ## How your agent handles cost and questions
 
-- It runs small jobs without asking (a run of Rp1.000 or less, about $0.05, while the whole request stays under Rp5.000) and tells you the cost once at the end.
+- It runs small jobs without asking (a run of $0.05 or less, while the whole request stays under about $0.25) and tells you the cost once at the end.
 - It asks first for anything above that, or above half your balance.
 - When a request could mean different things it asks one short question with a few options, its recommendation first.
 
 ## Pricing and payment
 
-Pay per call, no plan. A Google search costs about Rp48 (roughly $0.003). Top up any amount from Rp10.000 by Indonesian bank virtual account or minimarket, or from $1 by card. Prices are always shown before a run. See https://1toolring.com/pricing/.
+Pay per call, no plan. Live Google results cost $0.0027 per call. Balance doesn't expire. Prices are always shown before a run. See https://1toolring.com/pricing/.
 
 ## Privacy and support
 
