@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.1toolring/mcp",
   "title": "1ToolRing",
-  "description": "Pay-per-call search, SEO, maps, e-commerce price and FX data for AI agents. One key, prepaid.",
-  "version": "1.0.1",
+  "description": "One key for AI agents: 3,051 pay-per-call tools for search, maps, shopping and market data.",
+  "version": "1.0.2",
   "websiteUrl": "https://1toolring.com",
   "repository": {
     "url": "https://github.com/khmuhtadin/1toolring-mcp",
